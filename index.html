@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="th,en">
+    <head>
+        <title>BMI</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="olay">
+            <div class="ct" id="content">
+                <h1 style="color: rgb(53, 53, 53);">เครื่องคำนวณหาค่าดัชนีมวลกาย (BMI)</h1>
+                <br>
+                <p style="color: rgb(53, 53, 53);">การหาค่าดัชนีมวลกาย (Body Mass Index : BMI) คือเป็นมาตรการที่ใช้ประเมินภาวะอ้วนและผอมในผู้ใหญ่ ตั้งแต่อายุ 20 ปีขึ้นไป สามารถทำได้โดยการชั่งน้ำหนักตัวเป็นกิโลกรัม และวัดส่วนสูงเป็นเซนติเมตร แล้วนำมาหาดัชมีมวลกาย โดยใช้โปรแกรมวัดค่าความอ้วนข้างต้น
+                    <br> 
+                    <br> Note. ทฤษฎี การประเมินระดับความอ้วนด้วยสูตรคำนวน BMI เป็นการประเมินจากค่าเฉลี่ยเชิงสถิติ ผลการคำนวณที่ได้อาจคลาดเคลื่อนจากความเป็นจริง โดยเฉพาะผู้ที่ออกกำลังกายเป็นประจำ หรือกลุ่มนักเพาะกายที่มีปริมาณกล้ามเนื้อสูง</p>
+                <br>    
+                <div class="f">
+                    <label for="field-mass" style="color: rgb(53, 53, 53); position: relative; left: 35px; font-size: 20px;">น้ำหนักตัว (kg.)</label>
+                    <input type="number" value="wei" id="field-mass" class="field-text" />
+
+                    <label for="field-height" style="color: rgb(53, 53, 53); position: relative; left: 50px; font-size: 20px;">ส่วนสูง (cm.)</label>
+                    <input type="number" value="hei" id="field-height" class="field-text" />
+                </div>
+                <br>
+                <button id="bt" onclick="bmi()">คำนวณ ↓</button>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="awer" id="answer">
+                    <h4 style="color: rgb(53, 53, 53); text-align: center; position: relative; top: 50px;">BMI</h4>
+                    <p id="aw" style="color: rgb(36, 36, 36); text-align: center; font-size: 55px; position: relative; top: 45px;">0</p>
+                </div>
+                <br>
+                <br>
+                <br>
+                <br>
+                <div class="ele">
+                    <h3 style="border-right: 1px solid #cacaca; border-bottom: 2px solid #cacaca;">BMI kg/m2</h3>
+                    <h3 style="border-bottom: 2px solid #cacaca;">อยู่ในเกณท์</h3>
+                    <h3 style="border-left: 1px solid rgb(202, 202, 202); border-bottom: 2px solid #cacaca;">ภาวะเสี่ยงต่อโรค</h3>
+
+                    <p style="border-right: 1px solid rgb(202, 202, 202);">น้อยกว่า 18.50</p>
+                    <p>น้ำหนักน้อย / ผอม</p>
+                    <p style="border-left: 1px solid rgb(202, 202, 202);">มากกว่าคนปกติ</p>
+
+                    <p style="border-right: 1px solid rgb(202, 202, 202);">ระหว่าง 18.50 - 22.90</p>
+                    <p>ปกติ (สุขภาพดี)</p>
+                    <p style="border-left: 1px solid rgb(202, 202, 202);">เท่าคนปกติ</p>
+
+                    <p style="border-right: 1px solid rgb(202, 202, 202);">ระหว่าง 23 - 24.90</p>
+                    <p>ท้วม / โรคอ้วนระดับ 1</p>
+                    <p style="border-left: 1px solid rgb(202, 202, 202);">อันตรายระดับ 1</p>
+
+                    <p style="border-right: 1px solid rgb(202, 202, 202);">ระหว่าง 25 - 29.90</p>
+                    <p>อ้วน / โรคอ้วนระดับ 2</p>
+                    <p style="border-left: 1px solid rgb(202, 202, 202);">อันตรายระดับ 2</p>
+
+                    <p style="border-right: 1px solid rgb(202, 202, 202);">มากกว่า 30</p>
+                    <p>อ้วนมาก / โรคอ้วนระดับ 3</p>
+                    <p style="border-left: 1px solid rgb(202, 202, 202);">อันตรายระดับ 3</p>
+                </div>
+                <script src="testjava.js"></script>
+            </div>
+        </div>
+    </body>
+    <footer>
+    </footer>
+</html>

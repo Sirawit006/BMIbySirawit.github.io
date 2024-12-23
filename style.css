@@ -1,0 +1,76 @@
+*{
+    font-family: 'Mitr', sans-serif;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+.olay{
+    
+    background-color: white;
+}
+.ct{
+    position: absolute;
+    width: 62vw;
+    height: 200vh;
+    background-color: rgb(255, 255, 255);
+    margin: 50px;
+    left: 200px;
+    padding: 50px;
+}
+.f{
+    display: grid;
+    grid-template-columns: repeat(4,175px);
+    padding: 10px;
+}
+.f input{
+    background-color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgb(53, 53, 53);
+}
+button{
+    cursor: pointer;
+    position: absolute;
+    color: rgb(53, 53, 53);
+    font-size: 25px;
+    left: 350px;
+    border: none;
+    background-color: rgb(192, 192, 192);
+    padding: 16px;
+    border-radius: 20px;
+}
+button:hover {
+    background-color: rgb(182, 182, 182);
+}
+.awer{
+    position: relative;
+    left: 120px;
+    background-color: white;
+    width: 500px;
+    height: 200px;
+    box-shadow: 5px 5px 20px -4px rgb(126, 126, 126);
+}
+.ele{
+    display: grid;
+    position: relative;
+    grid: 60px 60px 60px 60px 60px 60px / repeat(3,250px);
+    color: rgb(53, 53, 53);
+    align-self: center;
+}
+.ele h3{
+    position: relative;
+    padding-top: 12px;
+    padding-left: 30px;
+    border-top: 2px solid #cacaca;
+}
+.ele p{
+    position: relative;
+    padding-top: 15px;
+    padding-left: 30px;
+    color: rgb(99, 99, 99);
+    border-bottom: 1px solid #cacaca;
+}
